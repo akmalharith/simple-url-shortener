@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h3>Let's shorten your URL!</h3>
+        <form method="POST">
+            <input name="text">
+            <input type="submit">
+        </form>
+        {% if show_results %}
+            <p>Your shortened URL is <a href="{{ short_url }}">{{ short_url }}</a></p>
+        {% endif %}
+    </body>
+</html>
